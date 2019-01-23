@@ -5,4 +5,5 @@ class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        fields = ('name', 'cetagory', 'supplier', 'unit_price', 'description', 'received', 'issued', 'balance')
+        fields = ('date', 'name', 'whom', 'requisition', 'unit_price', 'description', 'received', 'issued', 'balance')
+        widgets = {'date': forms.DateTimeInput(attrs={'class': 'datetime-input'})}

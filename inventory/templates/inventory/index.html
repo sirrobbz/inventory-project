@@ -10,13 +10,14 @@
         <thead>
         <tr>
             <th>#</th>
-            <th> Name</th>
-            <th>Category</th>
-            <th>Supplier</th>
-            <th>Unit Price</th>
+            <th>Date</th>
+            <th>Item Name</th>
+            <th>Received From / Issued To</th>
+            <th>Requisition No.</th>
+            <th>Rate (Kes)</th>
             <th>Received</th>
             <th>Issued</th>
-            <th>Balance</th>
+            <th>In Stock</th>
         </tr>
         </thead>
         <tbody>
@@ -28,9 +29,10 @@
                         {{ product.pk }}
                     </a>
                 </th>
+                <td>{{ product.date }}</td>
                 <td>{{ product.name }}</td>
-                <td>{{ product.cetagory }}</td>
-                <td>{{ product.supplier }}</td>
+                <td>{{ product.whom }}</td>
+                <td>{{ product.requisition }}</td>
                 <td>{{ product.unit_price }}</td>
                 <td>{{ product.received }}</td>
                 <td>{{ product.issued }}</td>

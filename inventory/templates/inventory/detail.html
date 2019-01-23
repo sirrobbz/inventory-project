@@ -8,10 +8,13 @@
             <a href="{% url 'edit' product.pk %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"> + Edit Product</a>
         </div>
 
-       <label><h5>Name</h5></label>:  {{ product.name }} <br>
-       <label><h5>Category</h5></label>: {{ product.cetagory }}<br>
-       <label><h5>Supplier</h5></label>: {{ product.supplier }}<br>
-       <label><h5>Unit Price</h5></label>: {{ product.unit_price }}<br>
+       <label><h5>Date</h5></label>:  {{ product.date }} <br>
+       <label><h5>Item Name</h5></label>:  {{ product.name }} <br>
+       <label><h5>Received From</h5></label>: {{ product.whom }}<br>
+       <label><h5>Issued To</h5></label>: {{ product.requisition }}<br>
+       <label><h5>Rate (Kes)</h5></label>: {{ product.unit_price }}<br>
+       <label><h5>Number Received</h5></label>: {{ product.received }}<br>
+       <label><h5>Number Issued</h5></label>: {{ product.issued }}<br>
        <label><h5>Description</h5>{{ product.description }}</label>
 
 {% endblock %}
